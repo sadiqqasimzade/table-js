@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="df ">
+        <div >
+            <input type="text" placeholder="search" id="search">
+            <select name="" id="selector">
+                <option selected value="">Id</option>
+                <option value="">Name</option>
+                <option value="">Surname</option>
+                <option value="">Age</option>
+            </select>
+            <div>
+                <label for="protect">Anti-Repeat Protection</label>
+                <input class="di" type="checkbox" name="" id="protect">
+            </div>
+
+            <table id="table">
+                <tr>
+                    <td>NO</td>
+                    <td>Name</td>
+                    <td>Surname</td>
+                    <td>Age</td>
+                    <td colspan="2">Actions</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <div class="ml10">
+            <button id="add">Add</button>
+            <div style="display: none;" id="modal" class="modal jcc aic">
+                <form id="form" action="" class="ml10 jcc aic modal-content">
+                    <span id="close" class="close">&times;</span>
+                    <label for="name">name</label>
+                    <input required type="text" autocomplete="off" id="name">
+                    <br>
+                    <label for="surname">surname</label>
+                    <input required type="text" autocomplete="off" id="surname">
+                    <br>
+                    <label for="age">age</label>
+                    <input required type="number" autocomplete="off" min="0" id="age">
+                    <br>
+                    <button type="button" id="cancel">Cancel</button>
+                    <button type="button" id="ok">Ok</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
